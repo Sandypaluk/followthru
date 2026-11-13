@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #F3F4F1;
+  color: #1C1E1B;
+}
+
+/* The signature element: a colored status rail on the left edge of each row,
+   like a tabbed ledger book, instead of a card grid. Color always maps to
+   operational meaning (overdue/waiting/etc.), never decoration. */
+.rail {
+  border-left-width: 3px;
+}
+
+::selection {
+  background: #2F5D62;
+  color: #F3F4F1;
+}
+
+:focus-visible {
+  outline: 2px solid #2F5D62;
+  outline-offset: 2px;
+}
